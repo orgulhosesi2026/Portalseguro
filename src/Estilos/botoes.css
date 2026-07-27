@@ -1,0 +1,20 @@
+/* ─── BUTTONS ─── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  padding: 10px 20px;
+  font-size: 14px; font-weight: 600; font-family: var(--font);
+  border-radius: var(--radius-md);
+  border: none; cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.btn-primary { background: var(--sesi-blue); color: white; }
+.btn-primary:hover { background: var(--sesi-blue-dark); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.btn-primary:active { transform: translateY(0); }
+.btn-secondary { background: var(--neutral-100); color: var(--neutral-700); border: 1.5px solid var(--neutral-200); }
+.btn-secondary:hover { background: var(--neutral-200); }
+.btn-danger { background: var(--sesi-red-light); color: var(--sesi-red); border: 1.5px solid #f5c6c2; }
+.btn-danger:hover { background: var(--sesi-red); color: white; }
+.btn-full { width: 100%; }
+.btn-sm { padding: 6px 12px; font-size: 12.5px; }
+

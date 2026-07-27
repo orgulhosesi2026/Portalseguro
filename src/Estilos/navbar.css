@@ -1,0 +1,80 @@
+
+.topbar {
+  background: var(--sesi-blue-dark);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,.3);
+}
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+}
+.topbar-logo-img {
+  height: 90px;
+  /* avaliar se ta bom o tamanho */
+  width: auto;
+  object-fit: contain;
+  
+}
+.topbar-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  border-left: 1px solid rgba(255,255,255,.2);
+  padding-left: 12px;
+}
+.topbar-brand-text span:first-child {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: white;
+}
+.topbar-brand-text span:last-child {
+  font-size: 10px;
+  color: rgba(255,255,255,.55);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.topbar-nav { display: flex; gap: 2px; }
+.topbar-nav button {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,.7);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.topbar-nav button:hover { background: rgba(255,255,255,.1); color: white; }
+.topbar-nav button.active {
+  background: rgba(255,255,255,.16);
+  color: white;
+}
+.nav-btn-wrap { position: relative; }
+.nav-btn-wrap button.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--sesi-yellow);
+  border-radius: 2px 2px 0 0;
+}
+

@@ -1,0 +1,50 @@
+/* ─── INFO PAGE ─── */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px; margin-bottom: 16px;
+}
+.info-item {
+  background: var(--neutral-50);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+.info-item:hover { box-shadow: var(--shadow-md); border-color: var(--neutral-300); }
+.info-item-icon {
+  width: 40px; height: 40px;
+  background: var(--sesi-blue-light);
+  color: var(--sesi-blue);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 12px;
+}
+.info-item h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.info-item p { font-size: 13.5px; color: var(--neutral-600); line-height: 1.6; }
+.info-types-list { list-style: none; margin-top: 14px; }
+.info-types-list li {
+  padding: 10px 0; border-bottom: 1px solid var(--neutral-200);
+  font-size: 14px; color: var(--neutral-700);
+  display: flex; align-items: flex-start; gap: 10px;
+}
+.info-types-list li:last-child { border-bottom: none; }
+.info-types-list .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--sesi-blue); flex-shrink: 0; margin-top: 5px;
+}
+.info-types-list strong { color: var(--sesi-blue-dark); }
+.contatos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+.contato-card {
+  background: var(--sesi-blue-light);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+.contato-nome { font-weight: 700; color: var(--sesi-blue-dark); margin-bottom: 2px; }
+.contato-desc { font-size: 13px; color: var(--neutral-500); margin-bottom: 8px; }
+.contato-tel { font-weight: 600; font-size: 14px; color: var(--sesi-blue); display: flex; align-items: center; gap: 5px; }
+

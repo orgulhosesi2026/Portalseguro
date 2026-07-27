@@ -1,0 +1,29 @@
+/* ─── FILTERS ─── */
+.filters-row { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+.filter-search-wrap { flex: 1; min-width: 180px; position: relative; display: flex; align-items: center; }
+.filter-search-icon { position: absolute; left: 12px; color: var(--neutral-400); pointer-events: none; }
+.filter-search {
+  width: 100%; padding: 8px 14px 8px 36px;
+  border: 1.5px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  font-size: 13px; font-family: var(--font); outline: none;
+  transition: border-color var(--transition);
+}
+.filter-search:focus { border-color: var(--sesi-blue); box-shadow: 0 0 0 3px rgba(0,63,138,.08); }
+.filter-select {
+  padding: 8px 12px;
+  border: 1.5px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  font-size: 13px; font-family: var(--font);
+  color: var(--neutral-700); background: white; cursor: pointer; outline: none;
+  transition: border-color var(--transition);
+}
+.filter-select:focus { border-color: var(--sesi-blue); }
+
+
+/* ─── EMPTY STATE ─── */
+.empty-state { text-align: center; padding: 56px 20px; color: var(--neutral-400); }
+.empty-state-icon { margin-bottom: 12px; display: flex; justify-content: center; }
+.empty-state h3 { font-size: 16px; font-weight: 600; color: var(--neutral-500); margin-bottom: 6px; }
+.empty-state p { font-size: 14px; }
+

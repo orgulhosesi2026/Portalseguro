@@ -1,0 +1,18 @@
+/* ─── SUCCESS CARD ─── */
+.success-card {
+  text-align: center;
+  padding: 48px 28px;
+}
+.success-icon-wrap { margin-bottom: 16px; }
+.success-title { font-size: 20px; font-weight: 700; color: var(--sesi-green); margin-bottom: 8px; }
+.success-sub { color: var(--neutral-500); margin-bottom: 24px; max-width: 380px; margin-left: auto; margin-right: auto; }
+.protocol-box {
+  background: var(--sesi-blue-light);
+  border-radius: var(--radius-md);
+  padding: 14px 24px;
+  display: inline-block;
+  margin-bottom: 28px;
+}
+.protocol-label { font-size: 11px; font-weight: 700; color: var(--sesi-blue); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+.protocol-id { font-family: 'Courier New', monospace; font-size: 22px; font-weight: 800; color: var(--sesi-blue-dark); letter-spacing: 2px; }
+

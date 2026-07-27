@@ -1,0 +1,18 @@
+/* Meio que reune todos os estilos */
+
+@import './Estilos/tokens.css';
+@import './Estilos/base.css';
+@import './Estilos/layout.css';
+@import './Estilos/navbar.css';
+@import './Estilos/hero.css';
+@import './Estilos/cartoes.css';
+@import './Estilos/formularios.css';
+@import './Estilos/toggle.css';
+@import './Estilos/botoes.css';
+@import './Estilos/badges-alertas.css';
+@import './Estilos/denuncia-sucesso.css';
+@import './Estilos/denuncia-cards.css';
+@import './Estilos/filtros.css';
+@import './Estilos/login.css';
+@import './Estilos/informacoes.css';
+@import './Estilos/toast.css';
